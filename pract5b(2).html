@@ -1,0 +1,70 @@
+<!Docktype html>
+<html>
+    <body>
+    	<style>
+			code {
+  				color: blue;
+  				background-color: lightgray;
+  				font-size: 120%;
+				}
+                aside {
+                width: 30%;
+                margin-left: 15px;
+                float: right;
+                font-style: italic;
+                background-color: lightgray;
+                }
+		</style>
+    	<h1 style="text-align: center;"><b>Program to convert Binary to decimal number</b></h1>
+        <aside>The idea is to extract the digits of a given binary number starting from right most digit and keep a variable dec_value. At the time of extracting digits from the binary number, multiply the digit with the proper base (Power of 2) and add it to the variable dec_value. At the end, the variable dec_value will store the required decimal number.</aside>
+    	<hr>
+    	<h2> <b>Problem Description</b> </h2>
+    	<p>This program takes a binary number as input and converts it into decimal number.</p>
+    	<hr>
+    	<h2> <b>Problem Solution</b> </h2>
+    	<p>1. Take a binary number as input<br>2. Multiply each digits of the binary number starting from the last with the powers of 2 respectively.<br>3. Add all the multiplied digits.<br>4. The total sum gives the decimal number.</p>
+		<hr>
+		<h2> <b>Source code</b> </h2>
+		<p>Here is source code of the C program to convert binary number to decimal. The C program is successfully compiled and run on a Linux system. The program output is also shown below.</p>
+		<p>
+        variables used in this code are <var>num,binary_val,decimal_val,base and rem.</var><br>
+        </p>
+        <pre>
+        <code>
+        #include <stdio.h>
+        void main()
+        {
+            int  num, binary_val, decimal_val = 0, base = 1, rem;
+            printf("Enter a binary number(1s and 0s) \n");
+            scanf("%d", &num);
+            binary_val = num;
+            while (num > 0)
+            {
+                rem = num % 10;
+                decimal_val = decimal_val + rem * base;
+                num = num / 10 ;    	
+                base = base * 2;      	 	
+            }
+            printf("The Binary number is = %d \n", binary_val);
+            printf("Its decimal equivalent is = %d \n", decimal_val);    	    	
+        }  
+         </code>
+        </pre>
+<hr>
+<h2><b>Sample output</b></h2>
+<samp>Enter a binary number(1s and 0s)</samp><br>
+<kbd>1011</kbd><br>
+<samp>The Binary number is = 1011<br>
+Its decimal equivalent is = 11</samp><br>
+<hr>
+<h2><b>Complexity of program</b></h2>
+<p>Log(n)</p>
+<hr>
+ <a href="https://www.geeksforgeeks.org/program-binary-decimal-conversion/">Click here for the algorithm</a>
+<nav>
+<a href="https://www.w3schools.com/Css/">CSS</a> | 
+<a href="https://www.w3schools.com/html/">HTML</a> | 
+<a href="https://www.w3schools.com/js/DEFAULT.asp">JavaScript</a> | 
+<a href="https://www.w3schools.com/sql/">SQL</a>
+</nav>
+</body>
