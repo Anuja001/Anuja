@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback </title>
+</head>
+<body >
+	<header>
+		<h1 style=" font-family:sans-serif; color:red;">Alpha Tour Management Company Feedback Form</h1>
+	</header>
+<form >
+			<section>
+					<tr>
+						<td>
+								<label for ="name"><strong> Enter Tourist Name:&nbsp</strong></label>
+								<input type="text" id="name" placeholder="Name"><br><br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+								<label for ="email"><strong>Enter Email:&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp </strong></label>
+								<input type="email" id="email" placeholder="xyz123@gmail.com"><br><br>
+						</td>
+					</tr>
+						<label for="img">Enter Tour Image:</label>
+        						<input type="file" id="img" name="img" accept="image/*" /><br /><br /> *:
+        				<label for="txt">Enter text file:</label>
+        						<input type="file" id="txt" name="txt" accept="text/*" /><br /><br /> *:
+        				<label for="pdf">Enter pdf file:</label>
+        						<input type="file" id="pdf" name="pdf" accept="pdf/*" /><br /><br /> *:
+        				<label for="fle">Enter file:</label>
+       							<input type="file" id="fle" name="fle" accept="file/*" /><br /><br />
+        	<input type="image" name="Name of image button" src="img.JPG" height="200px" width="250px" alt="Img_Button" onclick="return Hunt()">
+		</section>
+	<section>
+		<table class="table2">
+			<th>
+				<h2 align="left" style=" font-family:sans-serif; color:blue">About Facilities provided by Alpha Tour Management Company:</h2>
+				<h3 align="left" style=" font-family:sans-serif; color:blue">Rate us with following quest:</h3>
+			</th>
+			<tr>
+				<td>
+						<label for="syllabus">1-Provided Daily  Meals</label>
+				</td>
+				<td>
+						<input type="radio" name="syllabus">1<br>
+						<input type="radio" name="syllabus">2<br>
+						<input type="radio" name="syllabus">3<br>
+						
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="Teach">2-Satisfied with the Tour Guidance</label>
+				</td>
+				<td>
+					<input type="radio" name="Teach">1<br>
+					<input type="radio" name="Teach">2<br>
+					<input type="radio" name="Teach">3<br>
+					
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="lab">3-Ease of finding the Tour Offers</label>
+				</td>
+				<td>
+					<input type="radio" name="lab">1<br>
+					<input type="radio" name="lab">2<br>
+					<input type="radio" name="lab">3<br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="Academics">4-Safety of Journey</label>
+				</td>
+				<td>
+					<input type="radio" name="Academic">1<br>
+					<input type="radio" name="Academic">2<br>
+					<input type="radio" name="Academic">3<br>
+	
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>5-Services provided by Staff</label>
+				</td>
+				<td>
+					<input type="radio" name="General">1<br>
+					<input type="radio" name="General">2<br>
+					<input type="radio" name="General">3<br>
+					
+				</td>
+			<tr>
+			<tr>
+				<td>
+					<label>6-Overall Tour ratings</label>
+				</td>
+				<td>
+					<input type="radio" name="General">1<br>
+					<input type="radio" name="General">2<br>
+					<input type="radio" name="General">3<br>
+					
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<label for="suggestion">Write Your Suggestions</label>
+				</td>
+				<br>
+				<td>
+                    <br>
+					<textarea name="bio" id="bio" cols="30" rows="5" placeholder="Here!!"></textarea><br><br>
+				</td>
+			</tr>
+		</table>
+	</section>
+													<!-- </center> -->
+	<div>
+			<br><br>
+			<button onclick="rest">Reset</button>
+            <button class="button button2" name = "button" value = "Edit" type = "reset">Edit</button>
+            <button class="button button1"name = "button" value = "submit" onclick="display_alert()" type = "submit">Submit</button>
+	</div>
+</form>
+</body>
+</html>
